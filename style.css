@@ -1,0 +1,511 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #eee;
+}
+
+.balloon {
+  /*display: block;
+  width: 5em;
+  height: 6.25em;
+  border-radius: 50% 50% 50% 50%/40% 40% 60% 60%;
+  position: absolute;
+  z-index: 1;*/
+}
+.balloon:before, .balloon:after {
+  content: "";
+  position: absolute;
+}
+.balloon:before {
+  width: 0.625em;
+  height: 0.35714em;
+  bottom: -0.26786em;
+  left: 2.14286em;
+  background: inherit;
+  border-radius: 0.5em;
+  z-index: 0;
+}
+.balloon:after {
+  width: 0.1em;
+  background: #ddd;
+  top: 100%;
+  left: 2.38095em;
+  z-index: -1;
+}
+.balloon:nth-of-type(1) {
+  bottom: 4em;
+  background: rgba(63, 118, 197, 0.5);
+  left: -0.5em;
+  animation: sway 14s infinite alternate linear;
+}
+.balloon:nth-of-type(1):after {
+  height: 4em;
+}
+.balloon:nth-of-type(2) {
+  bottom: 13em;
+  background: rgba(197, 118, 63, 0.5);
+  left: 3.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(2):after {
+  height: 13em;
+}
+.balloon:nth-of-type(3) {
+  bottom: 9em;
+  background: rgba(142, 63, 197, 0.5);
+  left: 7.5em;
+  animation: sway 10s infinite alternate linear;
+}
+.balloon:nth-of-type(3):after {
+  height: 9em;
+}
+.balloon:nth-of-type(4) {
+  bottom: 11em;
+  background: rgba(197, 63, 75, 0.5);
+  left: 11.5em;
+  animation: sway 7s infinite alternate linear;
+}
+.balloon:nth-of-type(4):after {
+  height: 11em;
+}
+.balloon:nth-of-type(5) {
+  bottom: 15em;
+  background: rgba(63, 197, 100, 0.5);
+  left: 15.5em;
+  animation: sway 11s infinite alternate linear;
+}
+.balloon:nth-of-type(5):after {
+  height: 15em;
+}
+.balloon:nth-of-type(6) {
+  bottom: 8em;
+  background: rgba(63, 197, 106, 0.5);
+  left: 19.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(6):after {
+  height: 8em;
+}
+.balloon:nth-of-type(7) {
+  bottom: 18em;
+  background: rgba(189, 63, 197, 0.5);
+  left: 23.5em;
+  animation: sway 8s infinite alternate linear;
+}
+.balloon:nth-of-type(7):after {
+  height: 18em;
+}
+.balloon:nth-of-type(8) {
+  bottom: 11em;
+  background: rgba(82, 197, 63, 0.5);
+  left: 27.5em;
+  animation: sway 8s infinite alternate linear;
+}
+.balloon:nth-of-type(8):after {
+  height: 11em;
+}
+.balloon:nth-of-type(9) {
+  bottom: 7em;
+  background: rgba(197, 147, 63, 0.5);
+  left: 31.5em;
+  animation: sway 14s infinite alternate linear;
+}
+.balloon:nth-of-type(9):after {
+  height: 7em;
+}
+.balloon:nth-of-type(10) {
+  bottom: 17em;
+  background: rgba(192, 197, 63, 0.5);
+  left: 35.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(10):after {
+  height: 17em;
+}
+.balloon:nth-of-type(11) {
+  bottom: 12em;
+  background: rgba(197, 63, 116, 0.5);
+  left: 39.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(11):after {
+  height: 12em;
+}
+.balloon:nth-of-type(12) {
+  bottom: 8em;
+  background: rgba(169, 63, 197, 0.5);
+  left: 43.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(12):after {
+  height: 8em;
+}
+.balloon:nth-of-type(13) {
+  bottom: 2em;
+  background: rgba(63, 120, 197, 0.5);
+  left: 47.5em;
+  animation: sway 12s infinite alternate linear;
+}
+.balloon:nth-of-type(13):after {
+  height: 2em;
+}
+.balloon:nth-of-type(14) {
+  bottom: 20em;
+  background: rgba(111, 197, 63, 0.5);
+  left: 51.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(14):after {
+  height: 20em;
+}
+.balloon:nth-of-type(15) {
+  bottom: 3em;
+  background: rgba(197, 75, 63, 0.5);
+  left: 55.5em;
+  animation: sway 7s infinite alternate linear;
+}
+.balloon:nth-of-type(15):after {
+  height: 3em;
+}
+.balloon:nth-of-type(16) {
+  bottom: 3em;
+  background: rgba(197, 171, 63, 0.5);
+  left: 59.5em;
+  animation: sway 11s infinite alternate linear;
+}
+.balloon:nth-of-type(16):after {
+  height: 3em;
+}
+.balloon:nth-of-type(17) {
+  bottom: 13em;
+  background: rgba(142, 197, 63, 0.5);
+  left: 63.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(17):after {
+  height: 13em;
+}
+.balloon:nth-of-type(18) {
+  bottom: 18em;
+  background: rgba(197, 160, 63, 0.5);
+  left: 67.5em;
+  animation: sway 14s infinite alternate linear;
+}
+.balloon:nth-of-type(18):after {
+  height: 18em;
+}
+.balloon:nth-of-type(19) {
+  bottom: 10em;
+  background: rgba(197, 149, 63, 0.5);
+  left: 71.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(19):after {
+  height: 10em;
+}
+.balloon:nth-of-type(20) {
+  bottom: 9em;
+  background: rgba(197, 77, 63, 0.5);
+  left: 75.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(20):after {
+  height: 9em;
+}
+.balloon:nth-of-type(21) {
+  bottom: 10em;
+  background: rgba(197, 63, 194, 0.5);
+  left: 79.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(21):after {
+  height: 10em;
+}
+.balloon:nth-of-type(22) {
+  bottom: 15em;
+  background: rgba(63, 145, 197, 0.5);
+  left: 83.5em;
+  animation: sway 12s infinite alternate linear;
+}
+.balloon:nth-of-type(22):after {
+  height: 15em;
+}
+.balloon:nth-of-type(23) {
+  bottom: 17em;
+  background: rgba(162, 63, 197, 0.5);
+  left: 87.5em;
+  animation: sway 8s infinite alternate linear;
+}
+.balloon:nth-of-type(23):after {
+  height: 17em;
+}
+.balloon:nth-of-type(24) {
+  bottom: 2em;
+  background: rgba(197, 63, 102, 0.5);
+  left: 91.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(24):after {
+  height: 2em;
+}
+.balloon:nth-of-type(25) {
+  bottom: 10em;
+  background: rgba(122, 63, 197, 0.5);
+  left: 95.5em;
+  animation: sway 12s infinite alternate linear;
+}
+.balloon:nth-of-type(25):after {
+  height: 10em;
+}
+.balloon:nth-of-type(26) {
+  bottom: 2em;
+  background: rgba(93, 197, 63, 0.5);
+  left: 99.5em;
+  animation: sway 7s infinite alternate linear;
+}
+.balloon:nth-of-type(26):after {
+  height: 2em;
+}
+.balloon:nth-of-type(27) {
+  bottom: 7em;
+  background: rgba(63, 197, 115, 0.5);
+  left: 103.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(27):after {
+  height: 7em;
+}
+.balloon:nth-of-type(28) {
+  bottom: 3em;
+  background: rgba(63, 197, 113, 0.5);
+  left: 107.5em;
+  animation: sway 10s infinite alternate linear;
+}
+.balloon:nth-of-type(28):after {
+  height: 3em;
+}
+.balloon:nth-of-type(29) {
+  bottom: 3em;
+  background: rgba(63, 142, 197, 0.5);
+  left: 111.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(29):after {
+  height: 3em;
+}
+.balloon:nth-of-type(30) {
+  bottom: 11em;
+  background: rgba(197, 63, 160, 0.5);
+  left: 115.5em;
+  animation: sway 14s infinite alternate linear;
+}
+.balloon:nth-of-type(30):after {
+  height: 11em;
+}
+.balloon:nth-of-type(31) {
+  bottom: 4em;
+  background: rgba(189, 63, 197, 0.5);
+  left: 119.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(31):after {
+  height: 4em;
+}
+.balloon:nth-of-type(32) {
+  bottom: 8em;
+  background: rgba(111, 197, 63, 0.5);
+  left: 123.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(32):after {
+  height: 8em;
+}
+.balloon:nth-of-type(33) {
+  bottom: 2em;
+  background: rgba(63, 113, 197, 0.5);
+  left: 127.5em;
+  animation: sway 11s infinite alternate linear;
+}
+.balloon:nth-of-type(33):after {
+  height: 2em;
+}
+.balloon:nth-of-type(34) {
+  bottom: 20em;
+  background: rgba(133, 197, 63, 0.5);
+  left: 131.5em;
+  animation: sway 7s infinite alternate linear;
+}
+.balloon:nth-of-type(34):after {
+  height: 20em;
+}
+.balloon:nth-of-type(35) {
+  bottom: 9em;
+  background: rgba(197, 147, 63, 0.5);
+  left: 135.5em;
+  animation: sway 11s infinite alternate linear;
+}
+.balloon:nth-of-type(35):after {
+  height: 9em;
+}
+.balloon:nth-of-type(36) {
+  bottom: 2em;
+  background: rgba(197, 63, 194, 0.5);
+  left: 139.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(36):after {
+  height: 2em;
+}
+.balloon:nth-of-type(37) {
+  bottom: 2em;
+  background: rgba(63, 194, 197, 0.5);
+  left: 143.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(37):after {
+  height: 2em;
+}
+.balloon:nth-of-type(38) {
+  bottom: 5em;
+  background: rgba(63, 140, 197, 0.5);
+  left: 147.5em;
+  animation: sway 10s infinite alternate linear;
+}
+.balloon:nth-of-type(38):after {
+  height: 5em;
+}
+.balloon:nth-of-type(39) {
+  bottom: 7em;
+  background: rgba(144, 63, 197, 0.5);
+  left: 151.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(39):after {
+  height: 7em;
+}
+.balloon:nth-of-type(40) {
+  bottom: 3em;
+  background: rgba(187, 63, 197, 0.5);
+  left: 155.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(40):after {
+  height: 3em;
+}
+.balloon:nth-of-type(41) {
+  bottom: 16em;
+  background: rgba(197, 149, 63, 0.5);
+  left: 159.5em;
+  animation: sway 11s infinite alternate linear;
+}
+.balloon:nth-of-type(41):after {
+  height: 16em;
+}
+.balloon:nth-of-type(42) {
+  bottom: 6em;
+  background: rgba(91, 63, 197, 0.5);
+  left: 163.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(42):after {
+  height: 6em;
+}
+.balloon:nth-of-type(43) {
+  bottom: 15em;
+  background: rgba(197, 158, 63, 0.5);
+  left: 167.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(43):after {
+  height: 15em;
+}
+.balloon:nth-of-type(44) {
+  bottom: 15em;
+  background: rgba(197, 91, 63, 0.5);
+  left: 171.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(44):after {
+  height: 15em;
+}
+.balloon:nth-of-type(45) {
+  bottom: 2em;
+  background: rgba(63, 183, 197, 0.5);
+  left: 175.5em;
+  animation: sway 8s infinite alternate linear;
+}
+.balloon:nth-of-type(45):after {
+  height: 2em;
+}
+.balloon:nth-of-type(46) {
+  bottom: 6em;
+  background: rgba(192, 197, 63, 0.5);
+  left: 179.5em;
+  animation: sway 6s infinite alternate linear;
+}
+.balloon:nth-of-type(46):after {
+  height: 6em;
+}
+.balloon:nth-of-type(47) {
+  bottom: 3em;
+  background: rgba(197, 63, 116, 0.5);
+  left: 183.5em;
+  animation: sway 12s infinite alternate linear;
+}
+.balloon:nth-of-type(47):after {
+  height: 3em;
+}
+.balloon:nth-of-type(48) {
+  bottom: 20em;
+  background: rgba(69, 197, 63, 0.5);
+  left: 187.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(48):after {
+  height: 20em;
+}
+.balloon:nth-of-type(49) {
+  bottom: 17em;
+  background: rgba(63, 169, 197, 0.5);
+  left: 191.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(49):after {
+  height: 17em;
+}
+.balloon:nth-of-type(50) {
+  bottom: 20em;
+  background: rgba(63, 197, 100, 0.5);
+  left: 195.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(50):after {
+  height: 20em;
+}
+
+.balloon.active {
+  color: red;
+  /*width: 22em;
+  height: 25em;
+  left: 40%;
+  z-index: 2;*/
+}
+
+@keyframes sway {
+  from {
+    -moz-transform: rotate(-3deg) translate(-0.2em, 0);
+    -ms-transform: rotate(-3deg) translate(-0.2em, 0);
+    -webkit-transform: rotate(-3deg) translate(-0.2em, 0);
+    transform: rotate(-3deg) translate(-0.2em, 0);
+  }
+  to {
+    -moz-transform: rotate(3deg) translate(0.5em, 0.75em);
+    -ms-transform: rotate(3deg) translate(0.5em, 0.75em);
+    -webkit-transform: rotate(3deg) translate(0.5em, 0.75em);
+    transform: rotate(3deg) translate(0.5em, 0.75em);
+  }
+}

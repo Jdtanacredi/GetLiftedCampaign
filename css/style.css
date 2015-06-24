@@ -1,0 +1,506 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #eee;
+  background-image: url("../images/bordeaux.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.balloon {
+  display: block;
+  width: 5em;
+  height: 6.25em;
+  border-radius: 50% 50% 50% 50%/40% 40% 60% 60%;
+  background: radial-gradient(circle at 50% 100%, rgba(250,208,219,.90), rgba(252,228,236,.90) 10%, rgba(246,204,214,.90) 80%, rgba(236,166,169,.90) 100%);
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: width 2s, height 2s, left 2s, z-index 2s, bottom 2s, font-size 2s;
+  transition: width 2s, height 2s, left 2s, z-index 2s, bottom 2s, font-size 2s;
+}
+.balloon>h3,
+.balloon>p {
+  opacity: 0;
+  padding: 18px;
+  text-align: center;
+  font-size: 0;
+  -webkit-transition: font-size 3s, opacity 6s, visibility 3s;
+  webkit-transition: font-size 3s, opacity 6s,visibility 3s;
+}
+.balloon>h3 {
+  position: absolute;
+  top: 24%;
+  left: 16px;
+}
+
+.active.balloon:before {
+  left: 10.75em;
+}
+.active.balloon:after {
+  left: 11em;
+}
+.balloon:before, .balloon:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: width 2s, height 2s, left 2s, z-index 2s, bottom 2s;
+}
+.balloon:before {
+  width: 0.625em;
+  height: 0.35714em;
+  bottom: -0.26786em;
+  left: 2.14286em;
+  background: inherit;
+  border-radius: 0.5em;
+  z-index: 0;
+}
+.balloon:after {
+  width: 0.1em;
+  background: #ddd;
+  top: 100%;
+  left: 2.38095em;
+  z-index: -1;
+}
+.balloon:nth-of-type(1) {
+  bottom: 11em;
+  left: -0.5em;
+  animation: sway 14s infinite alternate linear;
+}
+.balloon:nth-of-type(1):after {
+  height: 15em;
+}
+.balloon:nth-of-type(2) {
+  bottom: 30em;
+  left: 3.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(2):after {
+  height: 15em;
+}
+.balloon:nth-of-type(3) {
+  bottom: 26em;
+  left: 7.5em;
+  animation: sway 10s infinite alternate linear;
+}
+.balloon:nth-of-type(3):after {
+  height: 15em;
+}
+.balloon:nth-of-type(4) {
+  bottom: 38em;
+  left: 11.5em;
+  animation: sway 7s infinite alternate linear;
+}
+.balloon:nth-of-type(4):after {
+  height: 15em;
+}
+.balloon:nth-of-type(5) {
+  bottom: 32em;
+  left: 15.5em;
+  animation: sway 11s infinite alternate linear;
+}
+.balloon:nth-of-type(5):after {
+  height: 15em;
+}
+.balloon:nth-of-type(6) {
+  bottom: 25em;
+  left: 19.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(6):after {
+  height: 15em;
+}
+.balloon:nth-of-type(7) {
+  bottom: 35em;
+  left: 23.5em;
+  animation: sway 8s infinite alternate linear;
+}
+.balloon:nth-of-type(7):after {
+  height: 15em;
+}
+.balloon:nth-of-type(8) {
+  bottom: 38em;
+  left: 27.5em;
+  animation: sway 8s infinite alternate linear;
+}
+.balloon:nth-of-type(8):after {
+  height: 15em;
+}
+.balloon:nth-of-type(9) {
+  bottom: 24em;
+  left: 31.5em;
+  animation: sway 14s infinite alternate linear;
+}
+.balloon:nth-of-type(9):after {
+  height: 15em;
+}
+.balloon:nth-of-type(10) {
+  bottom: 34em;
+  
+  left: 35.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(10):after {
+  height: 15em;
+}
+.balloon:nth-of-type(11) {
+  bottom: 29em;
+ 
+  left: 39.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(11):after {
+  height: 15em;
+}
+.balloon:nth-of-type(12) {
+  bottom: 25em;
+  
+  left: 43.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(12):after {
+  height: 15em;
+}
+.balloon:nth-of-type(13) {
+  bottom: 19em;
+  
+  left: 47.5em;
+  animation: sway 12s infinite alternate linear;
+}
+.balloon:nth-of-type(13):after {
+  height: 15em;
+}
+.balloon:nth-of-type(14) {
+  bottom: 37em;
+  
+  left: 51.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(14):after {
+  height: 15em;
+}
+.balloon:nth-of-type(15) {
+  bottom: 20em;
+ 
+  left: 55.5em;
+  animation: sway 7s infinite alternate linear;
+}
+.balloon:nth-of-type(15):after {
+  height: 15em;
+}
+.balloon:nth-of-type(16) {
+  bottom: 20em;
+  left: 59.5em;
+  animation: sway 11s infinite alternate linear;
+}
+.balloon:nth-of-type(16):after {
+  height: 15em;
+}
+.balloon:nth-of-type(17) {
+  bottom: 30em;
+  left: 63.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(17):after {
+  height: 15em;
+}
+.balloon:nth-of-type(18) {
+  bottom: 35em;
+  left: 67.5em;
+  animation: sway 14s infinite alternate linear;
+}
+.balloon:nth-of-type(18):after {
+  height: 15em;
+}
+.balloon:nth-of-type(19) {
+  bottom: 27em;
+  left: 71.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(19):after {
+  height: 10em;
+}
+.balloon:nth-of-type(20) {
+  bottom: 36em;
+  left: 75.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(20):after {
+  height: 10em;
+}
+.balloon:nth-of-type(21) {
+  bottom: 37em;
+  left: 79.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(21):after {
+  height: 10em;
+}
+.balloon:nth-of-type(22) {
+  bottom: 32em;
+  left: 83.5em;
+  animation: sway 12s infinite alternate linear;
+}
+.balloon:nth-of-type(22):after {
+  height: 15em;
+}
+.balloon:nth-of-type(23) {
+  bottom: 27em;
+  left: 87.5em;
+  animation: sway 8s infinite alternate linear;
+}
+.balloon:nth-of-type(23):after {
+  height: 17em;
+}
+.balloon:nth-of-type(24) {
+  bottom: 22em;
+  left: 91.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(24):after {
+  height: 2em;
+}
+.balloon:nth-of-type(25) {
+  bottom: 20em;
+  left: 95.5em;
+  animation: sway 12s infinite alternate linear;
+}
+.balloon:nth-of-type(25):after {
+  height: 10em;
+}
+.balloon:nth-of-type(26) {
+  bottom: 22em;
+  left: 99.5em;
+  animation: sway 7s infinite alternate linear;
+}
+.balloon:nth-of-type(26):after {
+  height: 2em;
+}
+.balloon:nth-of-type(27) {
+  bottom: 7em;
+  left: 103.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(27):after {
+  height: 7em;
+}
+.balloon:nth-of-type(28) {
+  bottom: 3em;
+  left: 107.5em;
+  animation: sway 10s infinite alternate linear;
+}
+.balloon:nth-of-type(28):after {
+  height: 3em;
+}
+.balloon:nth-of-type(29) {
+  bottom: 3em;
+  left: 111.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(29):after {
+  height: 3em;
+}
+.balloon:nth-of-type(30) {
+  bottom: 11em;
+  left: 115.5em;
+  animation: sway 14s infinite alternate linear;
+}
+.balloon:nth-of-type(30):after {
+  height: 11em;
+}
+.balloon:nth-of-type(31) {
+  bottom: 4em;
+  left: 119.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(31):after {
+  height: 4em;
+}
+.balloon:nth-of-type(32) {
+  bottom: 8em;
+  left: 123.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(32):after {
+  height: 8em;
+}
+.balloon:nth-of-type(33) {
+  bottom: 2em;
+  left: 127.5em;
+  animation: sway 11s infinite alternate linear;
+}
+.balloon:nth-of-type(33):after {
+  height: 2em;
+}
+.balloon:nth-of-type(34) {
+  bottom: 20em;
+  left: 131.5em;
+  animation: sway 7s infinite alternate linear;
+}
+.balloon:nth-of-type(34):after {
+  height: 20em;
+}
+.balloon:nth-of-type(35) {
+  bottom: 9em;
+  left: 135.5em;
+  animation: sway 11s infinite alternate linear;
+}
+.balloon:nth-of-type(35):after {
+  height: 9em;
+}
+.balloon:nth-of-type(36) {
+  bottom: 2em;
+  left: 139.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(36):after {
+  height: 2em;
+}
+.balloon:nth-of-type(37) {
+  bottom: 2em;
+  left: 143.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(37):after {
+  height: 2em;
+}
+.balloon:nth-of-type(38) {
+  bottom: 5em;
+  left: 147.5em;
+  animation: sway 10s infinite alternate linear;
+}
+.balloon:nth-of-type(38):after {
+  height: 5em;
+}
+.balloon:nth-of-type(39) {
+  bottom: 7em;
+  left: 151.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(39):after {
+  height: 7em;
+}
+.balloon:nth-of-type(40) {
+  bottom: 3em;
+  left: 155.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(40):after {
+  height: 3em;
+}
+.balloon:nth-of-type(41) {
+  bottom: 16em;
+  left: 159.5em;
+  animation: sway 11s infinite alternate linear;
+}
+.balloon:nth-of-type(41):after {
+  height: 16em;
+}
+.balloon:nth-of-type(42) {
+  bottom: 6em;
+  left: 163.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(42):after {
+  height: 6em;
+}
+.balloon:nth-of-type(43) {
+  bottom: 15em;
+  left: 167.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(43):after {
+  height: 15em;
+}
+.balloon:nth-of-type(44) {
+  bottom: 15em;
+  left: 171.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(44):after {
+  height: 15em;
+}
+.balloon:nth-of-type(45) {
+  bottom: 2em;
+  left: 175.5em;
+  animation: sway 8s infinite alternate linear;
+}
+.balloon:nth-of-type(45):after {
+  height: 2em;
+}
+.balloon:nth-of-type(46) {
+  bottom: 6em;
+  left: 179.5em;
+  animation: sway 6s infinite alternate linear;
+}
+.balloon:nth-of-type(46):after {
+  height: 6em;
+}
+.balloon:nth-of-type(47) {
+  bottom: 3em;
+  left: 183.5em;
+  animation: sway 12s infinite alternate linear;
+}
+.balloon:nth-of-type(47):after {
+  height: 3em;
+}
+.balloon:nth-of-type(48) {
+  bottom: 20em;
+  left: 187.5em;
+  animation: sway 9s infinite alternate linear;
+}
+.balloon:nth-of-type(48):after {
+  height: 20em;
+}
+.balloon:nth-of-type(49) {
+  bottom: 17em;
+  left: 191.5em;
+  animation: sway 15s infinite alternate linear;
+}
+.balloon:nth-of-type(49):after {
+  height: 17em;
+}
+.balloon:nth-of-type(50) {
+  bottom: 20em;
+  left: 195.5em;
+  animation: sway 13s infinite alternate linear;
+}
+.balloon:nth-of-type(50):after {
+  height: 20em;
+}
+
+.balloon.active {
+  position: fixed;
+  bottom:25%;
+  left: 40%;
+  width: 22em;
+  height: 25em;
+  z-index: 2;
+  transform:translate(-50%,-50%);
+}
+.balloon.active>h3 {
+  font-size: 24px;
+  opacity: 1;
+}
+.balloon.active>p {
+  font-size: 16px;
+  opacity: 1;
+}
+
+@keyframes sway {
+  from {
+    -moz-transform: rotate(-3deg) translate(-5.7em, 0);
+    -ms-transform: rotate(-3deg) translate(-5.7em, 0);
+    -webkit-transform: rotate(-3deg) translate(-5.7em, 0);
+    transform: rotate(-3deg) translate(-5.7em, 0);
+  }
+  to {
+    -moz-transform: rotate(3deg) translate(0.5em, 0.75em);
+    -ms-transform: rotate(3deg) translate(0.5em, 0.75em);
+    -webkit-transform: rotate(3deg) translate(0.5em, 0.75em);
+    transform: rotate(3deg) translate(0.5em, 0.75em);
+  }
+}
