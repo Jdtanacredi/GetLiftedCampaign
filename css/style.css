@@ -47,6 +47,7 @@ body {
 .balloon:before, .balloon:after {
   content: "";
   position: absolute;
+  transition: width 2s, height 2s, left 2s, z-index 2s, bottom 2s;
   -webkit-transition: width 2s, height 2s, left 2s, z-index 2s, bottom 2s;
 }
 .balloon:before {
@@ -69,6 +70,7 @@ body {
   bottom: 11em;
   left: -0.5em;
   animation: sway 14s infinite alternate linear;
+  -webkit-animation: sway 14s infinite alternate linear;
 }
 .balloon:nth-of-type(1):after {
   height: 15em;
@@ -77,6 +79,7 @@ body {
   bottom: 30em;
   left: 3.5em;
   animation: sway 13s infinite alternate linear;
+  -webkit-animation: sway 13s infinite alternate linear;
 }
 .balloon:nth-of-type(2):after {
   height: 15em;
@@ -85,6 +88,7 @@ body {
   bottom: 26em;
   left: 7.5em;
   animation: sway 10s infinite alternate linear;
+  -webkit-animation: sway 10s infinite alternate linear;
 }
 .balloon:nth-of-type(3):after {
   height: 15em;
@@ -93,6 +97,7 @@ body {
   bottom: 38em;
   left: 11.5em;
   animation: sway 7s infinite alternate linear;
+  -webkit-animation: sway 7s infinite alternate linear;
 }
 .balloon:nth-of-type(4):after {
   height: 15em;
@@ -101,6 +106,7 @@ body {
   bottom: 32em;
   left: 15.5em;
   animation: sway 11s infinite alternate linear;
+  -webkit-animation: sway 11s infinite alternate linear;
 }
 .balloon:nth-of-type(5):after {
   height: 15em;
@@ -109,6 +115,7 @@ body {
   bottom: 25em;
   left: 19.5em;
   animation: sway 9s infinite alternate linear;
+  -webkit-animation: sway 9s infinite alternate linear;
 }
 .balloon:nth-of-type(6):after {
   height: 15em;
@@ -117,6 +124,7 @@ body {
   bottom: 35em;
   left: 23.5em;
   animation: sway 8s infinite alternate linear;
+  -webkit-animation: sway 8s infinite alternate linear;
 }
 .balloon:nth-of-type(7):after {
   height: 15em;
@@ -125,6 +133,7 @@ body {
   bottom: 38em;
   left: 27.5em;
   animation: sway 8s infinite alternate linear;
+  -webkit-animation: sway 8s infinite alternate linear;
 }
 .balloon:nth-of-type(8):after {
   height: 15em;
@@ -133,6 +142,7 @@ body {
   bottom: 24em;
   left: 31.5em;
   animation: sway 14s infinite alternate linear;
+  -webkit-animation: sway 14s infinite alternate linear;
 }
 .balloon:nth-of-type(9):after {
   height: 15em;
@@ -142,6 +152,7 @@ body {
   
   left: 35.5em;
   animation: sway 15s infinite alternate linear;
+  -webkit-animation: sway 15s infinite alternate linear;
 }
 .balloon:nth-of-type(10):after {
   height: 15em;
@@ -151,6 +162,7 @@ body {
  
   left: 39.5em;
   animation: sway 9s infinite alternate linear;
+  -webkit-animation: sway 9s infinite alternate linear;
 }
 .balloon:nth-of-type(11):after {
   height: 15em;
@@ -160,6 +172,7 @@ body {
   
   left: 43.5em;
   animation: sway 9s infinite alternate linear;
+  -webkit-animation: sway 9s infinite alternate linear;
 }
 .balloon:nth-of-type(12):after {
   height: 15em;
@@ -169,6 +182,7 @@ body {
   
   left: 47.5em;
   animation: sway 12s infinite alternate linear;
+  -webkit-animation: sway 12s infinite alternate linear;
 }
 .balloon:nth-of-type(13):after {
   height: 15em;
@@ -178,6 +192,7 @@ body {
   
   left: 51.5em;
   animation: sway 9s infinite alternate linear;
+  -webkit-animation: sway 9s infinite alternate linear;
 }
 .balloon:nth-of-type(14):after {
   height: 15em;
@@ -187,6 +202,7 @@ body {
  
   left: 55.5em;
   animation: sway 7s infinite alternate linear;
+  -webkit-animation: sway 7s infinite alternate linear;
 }
 .balloon:nth-of-type(15):after {
   height: 15em;
@@ -195,6 +211,7 @@ body {
   bottom: 20em;
   left: 59.5em;
   animation: sway 11s infinite alternate linear;
+  -webkit-animation: sway 11s infinite alternate linear;
 }
 .balloon:nth-of-type(16):after {
   height: 15em;
@@ -203,6 +220,7 @@ body {
   bottom: 30em;
   left: 63.5em;
   animation: sway 9s infinite alternate linear;
+  -webkit-animation: sway 9s infinite alternate linear;
 }
 .balloon:nth-of-type(17):after {
   height: 15em;
@@ -211,6 +229,7 @@ body {
   bottom: 35em;
   left: 67.5em;
   animation: sway 14s infinite alternate linear;
+  -webkit-animation: sway 14s infinite alternate linear;
 }
 .balloon:nth-of-type(18):after {
   height: 15em;
@@ -219,6 +238,7 @@ body {
   bottom: 27em;
   left: 71.5em;
   animation: sway 15s infinite alternate linear;
+  -webkit-animation: sway 15s infinite alternate linear;
 }
 .balloon:nth-of-type(19):after {
   height: 10em;
@@ -227,6 +247,7 @@ body {
   bottom: 36em;
   left: 75.5em;
   animation: sway 15s infinite alternate linear;
+  -webkit-animation: sway 15s infinite alternate linear;
 }
 .balloon:nth-of-type(20):after {
   height: 10em;
@@ -235,6 +256,7 @@ body {
   bottom: 37em;
   left: 79.5em;
   animation: sway 15s infinite alternate linear;
+  -webkit-animation: sway 15s infinite alternate linear;
 }
 .balloon:nth-of-type(21):after {
   height: 10em;
@@ -243,6 +265,7 @@ body {
   bottom: 32em;
   left: 83.5em;
   animation: sway 12s infinite alternate linear;
+  -webkit-animation: sway 12s infinite alternate linear;
 }
 .balloon:nth-of-type(22):after {
   height: 15em;
@@ -251,6 +274,7 @@ body {
   bottom: 27em;
   left: 87.5em;
   animation: sway 8s infinite alternate linear;
+  -webkit-animation: sway 8s infinite alternate linear;
 }
 .balloon:nth-of-type(23):after {
   height: 17em;
@@ -259,6 +283,7 @@ body {
   bottom: 22em;
   left: 91.5em;
   animation: sway 13s infinite alternate linear;
+  -webkit-animation: sway 13s infinite alternate linear;
 }
 .balloon:nth-of-type(24):after {
   height: 2em;
@@ -267,6 +292,7 @@ body {
   bottom: 20em;
   left: 95.5em;
   animation: sway 12s infinite alternate linear;
+  -webkit-animation: sway 12s infinite alternate linear;
 }
 .balloon:nth-of-type(25):after {
   height: 10em;
@@ -275,6 +301,7 @@ body {
   bottom: 22em;
   left: 99.5em;
   animation: sway 7s infinite alternate linear;
+  -webkit-animation: sway 7s infinite alternate linear;
 }
 .balloon:nth-of-type(26):after {
   height: 2em;
@@ -283,6 +310,7 @@ body {
   bottom: 7em;
   left: 103.5em;
   animation: sway 15s infinite alternate linear;
+  -webkit-animation: sway 15s infinite alternate linear;
 }
 .balloon:nth-of-type(27):after {
   height: 7em;
@@ -291,6 +319,7 @@ body {
   bottom: 3em;
   left: 107.5em;
   animation: sway 10s infinite alternate linear;
+  -webkit-animation: sway 10s infinite alternate linear;
 }
 .balloon:nth-of-type(28):after {
   height: 3em;
@@ -299,6 +328,7 @@ body {
   bottom: 3em;
   left: 111.5em;
   animation: sway 9s infinite alternate linear;
+  -webkit-animation: sway 9s infinite alternate linear;
 }
 .balloon:nth-of-type(29):after {
   height: 3em;
@@ -307,6 +337,7 @@ body {
   bottom: 11em;
   left: 115.5em;
   animation: sway 14s infinite alternate linear;
+  -webkit-animation: sway 14s infinite alternate linear;
 }
 .balloon:nth-of-type(30):after {
   height: 11em;
@@ -315,6 +346,7 @@ body {
   bottom: 4em;
   left: 119.5em;
   animation: sway 9s infinite alternate linear;
+  -webkit-animation: sway 9s infinite alternate linear;
 }
 .balloon:nth-of-type(31):after {
   height: 4em;
@@ -323,6 +355,7 @@ body {
   bottom: 8em;
   left: 123.5em;
   animation: sway 13s infinite alternate linear;
+  -webkit-animation: sway 13s infinite alternate linear;
 }
 .balloon:nth-of-type(32):after {
   height: 8em;
@@ -331,6 +364,7 @@ body {
   bottom: 2em;
   left: 127.5em;
   animation: sway 11s infinite alternate linear;
+  -webkit-animation: sway 11s infinite alternate linear;
 }
 .balloon:nth-of-type(33):after {
   height: 2em;
@@ -339,6 +373,7 @@ body {
   bottom: 20em;
   left: 131.5em;
   animation: sway 7s infinite alternate linear;
+  -webkit-animation: sway 7s infinite alternate linear;
 }
 .balloon:nth-of-type(34):after {
   height: 20em;
@@ -347,6 +382,7 @@ body {
   bottom: 9em;
   left: 135.5em;
   animation: sway 11s infinite alternate linear;
+  -webkit-animation: sway 11s infinite alternate linear;
 }
 .balloon:nth-of-type(35):after {
   height: 9em;
@@ -504,3 +540,34 @@ body {
     transform: rotate(3deg) translate(0.5em, 0.75em);
   }
 }
+
+@-webkit-keyframes sway {
+  from {
+    -moz-transform: rotate(-3deg) translate(-5.7em, 0);
+    -ms-transform: rotate(-3deg) translate(-5.7em, 0);
+    -webkit-transform: rotate(-3deg) translate(-5.7em, 0);
+    transform: rotate(-3deg) translate(-5.7em, 0);
+  }
+  to {
+    -moz-transform: rotate(3deg) translate(0.5em, 0.75em);
+    -ms-transform: rotate(3deg) translate(0.5em, 0.75em);
+    -webkit-transform: rotate(3deg) translate(0.5em, 0.75em);
+    transform: rotate(3deg) translate(0.5em, 0.75em);
+  }
+}
+
+@-moz-webkit-keyframes sway {
+  from {
+    -moz-transform: rotate(-3deg) translate(-5.7em, 0);
+    -ms-transform: rotate(-3deg) translate(-5.7em, 0);
+    -webkit-transform: rotate(-3deg) translate(-5.7em, 0);
+    transform: rotate(-3deg) translate(-5.7em, 0);
+  }
+  to {
+    -moz-transform: rotate(3deg) translate(0.5em, 0.75em);
+    -ms-transform: rotate(3deg) translate(0.5em, 0.75em);
+    -webkit-transform: rotate(3deg) translate(0.5em, 0.75em);
+    transform: rotate(3deg) translate(0.5em, 0.75em);
+  }
+}
+
